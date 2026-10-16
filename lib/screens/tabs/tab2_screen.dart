@@ -22,10 +22,10 @@ class _Tab2ScreenState extends State<Tab2Screen> {
           Row(
             mainAxisAlignment: MainAxisAlignment.spaceAround,
             children: [
-              _chip('All', 0),
-              _chip('Active', 1),
-              _chip('Hot', 2),
-              _chip('Saved', 3),
+              _chip('Bamboo Forest', 0),
+              _chip('Cascading Creek', 1),
+              _chip('Misty Rain', 2),
+              _chip('Wind Chimes', 3),
             ],
           ),
           const SizedBox(height: 16),
@@ -47,7 +47,7 @@ class _Tab2ScreenState extends State<Tab2Screen> {
                   child: Column(
                     crossAxisAlignment: CrossAxisAlignment.start,
                     children: [
-                      Text('Soundscapes Record #${i + 201}', style: const TextStyle(fontWeight: FontWeight.bold)),
+                      Text(const ['Kyoto Bamboo Zen Stream', 'Highland Waterfall Echo', 'Gentle Rain on Tin Roof', 'Distant Mountain Thunder', 'Night Cricket Symphony'][i % 5], style: const TextStyle(fontWeight: FontWeight.bold)),
                       Text('Stage ${i + 1} • Verified status', style: const TextStyle(fontSize: 12, color: Colors.white60)),
                     ],
                   ),

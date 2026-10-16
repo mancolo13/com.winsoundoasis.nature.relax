@@ -16,10 +16,10 @@ class _MainScreenState extends State<MainScreen> {
   int _currentIndex = 0;
 
   final List<Widget> _screens = const [
-    Tab1Screen(),
-    Tab2Screen(),
-    Tab3Screen(),
     Tab4Screen(),
+    Tab1Screen(),
+    Tab3Screen(),
+    Tab2Screen(),
   ];
 
   @override
@@ -33,14 +33,14 @@ class _MainScreenState extends State<MainScreen> {
         indicatorColor: AppTheme.primaryColor.withValues(alpha: 0.2),
         destinations: [
         NavigationDestination(
+          icon: const Icon(Icons.bedtime_outlined),
+          selectedIcon: const Icon(Icons.bedtime, color: AppTheme.primaryColor),
+          label: 'Timer',
+        ),
+        NavigationDestination(
           icon: const Icon(Icons.park_outlined),
           selectedIcon: const Icon(Icons.park, color: AppTheme.primaryColor),
           label: 'Oasis',
-        ),
-        NavigationDestination(
-          icon: const Icon(Icons.headphones_outlined),
-          selectedIcon: const Icon(Icons.headphones, color: AppTheme.primaryColor),
-          label: 'Soundscapes',
         ),
         NavigationDestination(
           icon: const Icon(Icons.tune_outlined),
@@ -48,11 +48,10 @@ class _MainScreenState extends State<MainScreen> {
           label: 'Mixer',
         ),
         NavigationDestination(
-          icon: const Icon(Icons.bedtime_outlined),
-          selectedIcon: const Icon(Icons.bedtime, color: AppTheme.primaryColor),
-          label: 'Timer',
+          icon: const Icon(Icons.headphones_outlined),
+          selectedIcon: const Icon(Icons.headphones, color: AppTheme.primaryColor),
+          label: 'Soundscapes',
         ),
-
         ],
       ),
     );
